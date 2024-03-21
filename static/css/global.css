@@ -1,0 +1,75 @@
+html,
+body {
+  background: #111;
+  color: aliceblue;
+  margin: 0;
+  padding: 0;
+  font: 400 16px/1.5em "Open Sans", sans-serif;
+  min-height: 100vh;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a,
+a:visited {
+  color: orange;
+  text-decoration: none;
+}
+
+a:hover {
+  color: darkgoldenrod;
+}
+
+#yt-wrap {
+  margin: 0;
+  display: block;
+  width: 960px;
+  height: 540px;
+  overflow: hidden;
+  border-bottom: 3px solid #444;
+}
+#yt-cover {
+  display: inline-block;
+  position: absolute;
+  width: 960px;
+  height: 540px;
+  z-index: 9999999999;
+}
+
+#ytplayer {
+  width: 960px;
+  height: 540px;
+}
+
+#yt-cover.curtain {
+  background: #111;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  animation-name: fadeOut;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  animation-duration: 1.5s;
+  animation-delay: 3.75s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+code {
+  display: block;
+  margin: 20px;
+  padding: 20px;
+  font-size: smaller;
+  color: aqua;
+}
