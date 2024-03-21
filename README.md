@@ -1,5 +1,7 @@
 # BronzeMedia - YouTube Player
 
+https://bronzevideoplayer.netlify.app/
+
 Basic HTML video Player Site.
 uses video js...
 
