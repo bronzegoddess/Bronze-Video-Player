@@ -10,14 +10,18 @@ const curtainFrame = document.getElementById("yt-cover");
 document.title = "Bronze Player - " + urlTitle;
 
 //Set the product name below video
-document.getElementById("ProductName").innerHTML = " - " + urlTitle;
+document.getElementById("ProductName").innerHTML = " " + urlTitle;
 
 //Set the product link to open amazon
 document.getElementById("AmazonLink").href =
   "https://www.amazon.com/dp/" + urlASIN;
 
 document.getElementById("AmazonLink").onclick = function () {
-  window.open("https://www.amazon.com/dp/" + urlASIN, "amz", 1280, 700);
+  window.open(
+    "https://www.amazon.com/dp/" + urlASIN,
+    "amz",
+    "left=1,top=1,width=1280,height=700"
+  );
 };
 
 //Set the curtain image based on youtube thumbnail
